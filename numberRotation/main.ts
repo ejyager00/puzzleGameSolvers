@@ -8,6 +8,17 @@ type wheelPuzzle = {
   shifts: [number, number, number]
 }
 
+function getSums(wp: wheelPuzzle): number[] | null {
+  if (wp.wheels[1].base==null || wp.wheels[2].base==null || wp.wheels[3].base==null || wp.wheels[3].spokes.length!=16) {
+    return null;
+  }
+  const sums = [...wp.wheels[3].spokes];
+  for (let i = 2; i >= 0; i--) {
+
+  }
+  return [];
+}
+
 const myPuzzle: wheelPuzzle = {
   wheels: [
     {
